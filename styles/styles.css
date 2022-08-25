@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: black; }
+
+.menu__index {
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5 , 1fr);
+    grid-template-areas: 
+    "logo   faciales  corporales   definitiva"
+    "logo   faciales  corporales   definitiva"
+    "logo   faciales  corporales   definitiva"
+    "logo   faciales  corporales   definitiva"
+    "logo   nosotros  nosotros     contacto";
+    
+    
+}
+
+
+
+.menu__index h3 {
+   
+    font-size: 36px;
+    
+    text-align: center;
+    border-radius: 50px;
+    
+            
+}
+
+.navbar {
+    background-color: rgb(238, 218, 233);
+}
+
+.navbar__logo {
+    grid-area: logo;
+}
+
+.navbar__contacto {
+    grid-area: contacto;
+}
+
+.navbar__faciales {
+    grid-area: faciales;
+}
+
+.navbar__corporales {
+    grid-area: corporales;
+}
+
+.navbar__depilacion {
+    grid-area: definitiva;
+}
+
+.navbar__nosotros {
+    grid-area: nosotros;
+}
+
+.navbar_hijo {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.navbar_hijo img {
+    max-width: 90%;
+    text-align: center;
+    
+}
+
+
+
+.alineacion_mid {
+    align-items: center;
+    text-align: center;
+}
+
+
+/********* NOSOTROS *******/
+
+.container-fluid img {
+    height: 250px;
+}
+
+.text-center { 
+    margin: 40px;
+
+}
+
+/***** TRATAMIENTOS FACIALES ******/
+
+.card-img-top {
+    width: 75%;
+}
+
+.card {
+    background-color: rgba(228, 195, 195, 0.445);
+    color: black;
+    border-color: rgb(0, 0, 0);
+    border: 0.5px rgb(163, 144, 160) solid;
+}
+
+.card a {
+    background-color: rgba(228, 195, 195, 0.445);
+    color: black;
+    border-color: rgb(0, 0, 0);
+}
+.card p {
+    
+}
+
+.col-md-4 img {
+
+    background-color: rgb(163, 144, 160);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: rgb(163, 144, 160);
+  }
