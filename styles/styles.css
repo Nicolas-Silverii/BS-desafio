@@ -18,13 +18,12 @@ a {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5 , 1fr);
+    grid-template-rows: repeat(4 , 1fr);
     grid-template-areas: 
-    "logo   faciales  corporales   definitiva"
-    "logo   faciales  corporales   definitiva"
-    "logo   faciales  corporales   definitiva"
-    "logo   faciales  corporales   definitiva"
-    "logo   nosotros  nosotros     contacto";
+    "logo   logo    faciales    corporales"
+    "logo   logo    faciales    corporales"
+    "logo   logo    definitiva  nosotros"
+    "logo   logo    definitiva  contacto"
     
     
 }
@@ -43,19 +42,40 @@ a {
 
 .navbar {
     background-color: rgb(238, 218, 233);
+    height: 15vh;
 }
 
 .navbar__logo {
     grid-area: logo;
+        
 }
+
+
+
 
 .navbar__contacto {
     grid-area: contacto;
+    
 }
+
+.navbar__contacto:hover,
+.navbar__nosotros:hover,
+.navbar__faciales:hover,
+.navbar__corporales:hover,
+.navbar__depilacion:hover {
+	-webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
 
 .navbar__faciales {
     grid-area: faciales;
+ 
 }
+
+
+
 
 .navbar__corporales {
     grid-area: corporales;
@@ -69,8 +89,11 @@ a {
     grid-area: nosotros;
 }
 
+
+
 .navbar_hijo {
-    border: solid black 1px;
+    margin: 5px;
+    background-color: rgb(248, 223, 223);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,8 +102,9 @@ a {
 
 
 
+
 .navbar_hijo img {
-    max-width: 90%;
+    max-width: 50%;
     text-align: center;
     
 }
@@ -92,9 +116,85 @@ a {
     text-align: center;
 }
 
+.navbar__logo:hover {
+	-webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            background-image: url(../imagenes/conocenos-foto.PNG);
+           
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            -webkit-animation: kenburns-top 2s ease-out both;
+	        animation: kenburns-top 2s ease-out both;
+            
+
+}
+
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+ 
+
+  .navbar-brand { 
+                -webkit-animation: roll-in-right 0.6s ease-out both;
+                animation: roll-in-right 0.6s ease-out both;
+    }
+ 
+@-webkit-keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  
+  
 
 /********* NOSOTROS *******/
-
+ .carousel-control-next-icon {
+    color:black
+  }
 .container-fluid img {
     height: 250px;
 }
@@ -106,8 +206,10 @@ a {
 
 /***** TRATAMIENTOS FACIALES ******/
 
+
 .card-img-top {
     width: 75%;
+   
 }
 
 .card {
@@ -117,13 +219,18 @@ a {
     border: 0.5px rgb(163, 144, 160) solid;
 }
 
+
+  
+
 .card a {
     background-color: rgba(228, 195, 195, 0.445);
     color: black;
     border-color: rgb(0, 0, 0);
 }
-.card p {
-    
+.card h3 {
+    background-color: rgb(228, 195, 195);
+    color: black;
+    height: 60px;
 }
 
 .col-md-4 img {
@@ -131,29 +238,34 @@ a {
     background-color: rgb(163, 144, 160);
 }
 
-.accordion-button:not(.collapsed) {
-    color: var(--bs-accordion-active-color);
-    background-color: rgb(163, 144, 160);
-  }
 
-  @media screen and (max-width: 768px) {
-    .menu__index {
-        
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
-    
-  }
 
-  @media screen and (max-width: 480px) {
-    .menu__index {
-        
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
+
+
+
+
+@media screen and (max-width: 768px) {
+.menu__index {
     
-  }
+    display: flex;
+    flex-direction: column;
+    
+}
+.navbar {
+    background-color: rgb(238, 218, 233);
+    height: 25vh;
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+.menu__index {
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+}
