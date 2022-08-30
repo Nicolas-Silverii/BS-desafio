@@ -139,7 +139,7 @@ a {
 
 }
 
-.img__logo { 
+.img__logo {
     filter: blur(1px);
 
 }
@@ -250,9 +250,7 @@ a {
 
 }
 
-.accordion {
-    padding-bottom: 80px;
-}
+
 
 .btn-primary {
     --bs-btn-color: #fff;
@@ -321,12 +319,7 @@ a {
 }
 
 
-/******CONTACTO*******/
-
-
-
-
-
+/*******    MEDIAS   ********/
 
 @media screen and (max-width: 768px) {
     .menu__index {
@@ -335,7 +328,7 @@ a {
         flex-direction: column;
 
     }
-    
+
     .navbar {
         background-color: rgb(238, 218, 233);
         height: 25vh;
@@ -345,21 +338,42 @@ a {
     .navbar__logo {
         height: 200px;
     }
-    .navbar__logo2:hover {
-        
-        background-image: none;
-        
-    }
 
-    
+    .navbar__logo2:hover {
+
+        background-image: none;
+
+    }
+    .navbar-collapse {
+        z-index: 1000;
+        background-color: rgba(211, 195, 211, 0.671);
+        
+        }
+        .element.style {
+            background-color: rgba(211, 195, 211, 0.671);
+        }
+        
+ 
+
 
     .accordion {
         display: flex;
         align-items: stretch;
-        justify-content: stretch ;
+        justify-content: stretch;
         flex-direction: column;
     }
+
+    .navbar_hijo2 img {
+        height: 400px;
+    }
+
+    .img__logo {
+        filter: none;
+    
+    }
 }
+
+
 
 @media screen and (max-width: 480px) {
     .menu__index {
@@ -369,13 +383,17 @@ a {
 
 
     }
-
+    .navbar-collapse {
+        z-index: 1000;
+        background-color: rgba(211, 195, 211, 0.671);
+        }
+        
     .navbar__logo2:hover {
-        
+
         background-image: none;
-        
+
     }
-    
+
     .navbar {
         height: 200px;
     }
