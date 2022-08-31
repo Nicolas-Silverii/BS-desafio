@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Oswald:wght@200;300;400;500;600;700&family=Square+Peg&family=Staatliches&family=Ubuntu:ital,wght@0,300;0,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Mochiy+Pop+One&family=Oswald:wght@200;300;400;500;600;700&family=Square+Peg&family=Staatliches&family=Ubuntu:ital,wght@0,300;0,400;1,500;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: rgba(187, 99, 180, 0.486);
+}
+*::selection {
+  background-color: rgba(187, 99, 180, 0.486);
+}
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__index {
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "logo   logo    faciales    corporales" "logo   logo    faciales    corporales" "logo   logo    definitiva  nosotros" "logo   logo    definitiva  contacto";
+}
+
+.navbar_hijo {
+  margin: 5px;
+  background-color: rgb(248, 223, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_hijo .navbar__faciales {
+  grid-area: faciales;
+}
+.navbar_hijo .navbar__corporales {
+  grid-area: corporales;
+}
+.navbar_hijo .navbar__depilacion {
+  grid-area: definitiva;
+}
+.navbar_hijo .navbar__nosotros {
+  grid-area: nosotros;
+}
+.navbar_hijo .navbar__contacto {
+  grid-area: contacto;
+}
+
+.navbar__contacto:hover,
+.navbar__nosotros:hover,
+.navbar__faciales:hover,
+.navbar__corporales:hover,
+.navbar__depilacion:hover {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.navbar__logo {
+  grid-area: logo;
+}
+.navbar__logo .navbar_hijo2 {
+  margin: 5px;
+  background-color: rgb(248, 223, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__logo .navbar_hijo2 .img__logo {
+  filter: blur(1px);
+}
+.navbar__logo .navbar__logo2:hover {
+  -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background-image: url(../imagenes/conocenos-foto-removebg-2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  -webkit-animation: kenburns-top 2s ease-out both;
+  animation: kenburns-top 2s ease-out both;
+}
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes roll-in-right {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-right {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/***** MEDIAS ******/
+@media screen and (max-width: 768px) {
+  .menu__index {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    background-color: rgb(238, 218, 233);
+    height: 25vh;
+  }
+  .navbar__logo {
+    height: 200px;
+  }
+  .navbar__logo2:hover {
+    background-image: none;
+  }
+  .navbar_hijo2 img {
+    height: 400px;
+  }
+  .img__logo {
+    filter: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu__index {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-collapse {
+    z-index: 1000;
+    background-color: rgba(211, 195, 211, 0.671);
+  }
+  .navbar__logo2:hover {
+    background-image: none;
+  }
+  .navbar-collapse {
+    z-index: 1000;
+    background-color: rgba(211, 195, 211, 0.671);
+  }
+  .element.style {
+    background-color: rgba(211, 195, 211, 0.671);
+  }
+  .accordion {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-direction: column;
+  }
+  .navbar {
+    height: 200px;
+  }
+}/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,83 @@
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/_index.scss";
+
+
+
+
+/***** MEDIAS ******/
+
+@media screen and (max-width: 768px) {
+    .menu__index {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .navbar {
+        background-color: rgb(238, 218, 233);
+        height: 25vh;
+    }
+
+
+    .navbar__logo {
+        height: 200px;
+    }
+
+    .navbar__logo2:hover {
+
+        background-image: none;
+
+    }
+
+    .navbar_hijo2 img {
+        height: 400px;
+    }
+
+    .img__logo {
+        filter: none;
+    
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .menu__index {
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .navbar-collapse {
+        z-index: 1000;
+        background-color: rgba(211, 195, 211, 0.671);
+        }
+        
+    .navbar__logo2:hover {
+
+        background-image: none;
+
+    }
+
+    .navbar-collapse {
+        z-index: 1000;
+        background-color: rgba(211, 195, 211, 0.671);
+        
+        }
+        .element.style {
+            background-color: rgba(211, 195, 211, 0.671);
+        }
+    
+    .accordion {
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+        flex-direction: column;
+    }
+
+    .navbar {
+        height: 200px;
+    }
+}

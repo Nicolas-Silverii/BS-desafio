@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    &::selection {
+        background-color: rgba(187, 99, 180, 0.486);
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
