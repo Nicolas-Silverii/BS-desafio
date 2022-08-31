@@ -10,9 +10,26 @@
         "logo   logo    faciales    corporales"
         "logo   logo    definitiva  nosotros"
         "logo   logo    definitiva  contacto";
+        
 
         
+    
+        
          }
+
+         
+      
+         .menu__index h3 {
+
+            font-size: 60px;
+            font-family: $fontSquare;
+        
+            text-align: center;
+            border-radius: 50px;
+        
+        
+            }
+
 
 .navbar_hijo {
     margin: 5px;
@@ -41,117 +58,118 @@
         grid-area: contacto;
     
     }
+    
 
     
     }
     
-        .navbar__contacto:hover,
-        .navbar__nosotros:hover,
-        .navbar__faciales:hover,
-        .navbar__corporales:hover,
-        .navbar__depilacion:hover {
-                -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.navbar__contacto:hover,
+.navbar__nosotros:hover,
+.navbar__faciales:hover,
+.navbar__corporales:hover,
+.navbar__depilacion:hover {
+        -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.navbar__logo {
+    grid-area: logo;
+
+    .navbar_hijo2 {
+        margin: 5px;
+        background-color: $navbarhijocolor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .img__logo {
+            filter: blur(1px);
+        
         }
+        
+    }   
 
-        .navbar__logo {
-            grid-area: logo;
+    .navbar__logo2:hover {
+        -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        background-image: url(../imagenes/conocenos-foto-removebg-2);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        -webkit-animation: kenburns-top 2s ease-out both;
+        animation: kenburns-top 2s ease-out both;
+        
 
-            .navbar_hijo2 {
-                margin: 5px;
-                background-color: $navbarhijocolor;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-                .img__logo {
-                    filter: blur(1px);
-                
+        
+
+            @-webkit-keyframes slide-in-fwd-center {
+                0% {
+                    -webkit-transform: translateZ(-1400px);
+                    transform: translateZ(-1400px);
+                    opacity: 0;
                 }
-                
-            }   
 
-            .navbar__logo2:hover {
-                -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                background-image: url(../imagenes/conocenos-foto-removebg-2);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 100%;
-                -webkit-animation: kenburns-top 2s ease-out both;
-                animation: kenburns-top 2s ease-out both;
-                
+                100% {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
 
-                
+            @keyframes slide-in-fwd-center {
+                0% {
+                    -webkit-transform: translateZ(-1400px);
+                    transform: translateZ(-1400px);
+                    opacity: 0;
+                }
 
-                    @-webkit-keyframes slide-in-fwd-center {
-                        0% {
-                            -webkit-transform: translateZ(-1400px);
-                            transform: translateZ(-1400px);
-                            opacity: 0;
-                        }
-
-                        100% {
-                            -webkit-transform: translateZ(0);
-                            transform: translateZ(0);
-                            opacity: 1;
-                        }
-                    }
-
-                    @keyframes slide-in-fwd-center {
-                        0% {
-                            -webkit-transform: translateZ(-1400px);
-                            transform: translateZ(-1400px);
-                            opacity: 0;
-                        }
-
-                        100% {
-                            -webkit-transform: translateZ(0);
-                            transform: translateZ(0);
-                            opacity: 1;
-                        }
-                    }
+                100% {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
                     
 
 
 
 
 
-@-webkit-keyframes roll-in-right {
-    0% {
-        -webkit-transform: translateX(800px) rotate(540deg);
-        transform: translateX(800px) rotate(540deg);
-        opacity: 0;
-    }
+                @-webkit-keyframes roll-in-right {
+                    0% {
+                        -webkit-transform: translateX(800px) rotate(540deg);
+                        transform: translateX(800px) rotate(540deg);
+                        opacity: 0;
+                    }
 
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
+                    100% {
+                        -webkit-transform: translateX(0) rotate(0deg);
+                        transform: translateX(0) rotate(0deg);
+                        opacity: 1;
+                    }
+                }
 
-@keyframes roll-in-right {
-    0% {
-        -webkit-transform: translateX(800px) rotate(540deg);
-        transform: translateX(800px) rotate(540deg);
-        opacity: 0;
-    }
+                @keyframes roll-in-right {
+                    0% {
+                        -webkit-transform: translateX(800px) rotate(540deg);
+                        transform: translateX(800px) rotate(540deg);
+                        opacity: 0;
+                    }
 
-    100% {
-        -webkit-transform: translateX(0) rotate(0deg);
-        transform: translateX(0) rotate(0deg);
-        opacity: 1;
-    }
-}
-            
-            }
-        
-        }
+                    100% {
+                        -webkit-transform: translateX(0) rotate(0deg);
+                        transform: translateX(0) rotate(0deg);
+                        opacity: 1;
+                    }
+                }
+                            
+                            }
+                        
+                        }
 
-    
+                    
 
 
-    
+                    
 
-    
+                    

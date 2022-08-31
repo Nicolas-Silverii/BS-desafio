@@ -27,6 +27,13 @@
   grid-template-areas: "logo   logo    faciales    corporales" "logo   logo    faciales    corporales" "logo   logo    definitiva  nosotros" "logo   logo    definitiva  contacto";
 }
 
+.menu__index h3 {
+  font-size: 60px;
+  font-family: "Square Peg", cursive;
+  text-align: center;
+  border-radius: 50px;
+}
+
 .navbar_hijo {
   margin: 5px;
   background-color: rgb(248, 223, 223);
