@@ -40,21 +40,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.navbar_hijo .navbar__faciales {
+
+.navbar__faciales {
   grid-area: faciales;
 }
-.navbar_hijo .navbar__corporales {
+
+.navbar__corporales {
   grid-area: corporales;
 }
-.navbar_hijo .navbar__depilacion {
+
+.navbar__depilacion {
   grid-area: definitiva;
 }
-.navbar_hijo .navbar__nosotros {
+
+.navbar__nosotros {
   grid-area: nosotros;
 }
-.navbar_hijo .navbar__contacto {
+
+.navbar__contacto {
   grid-area: contacto;
+}
+
+.navbar_hijo img {
+  max-width: 50%;
+  text-align: center;
 }
 
 .navbar__contacto:hover,

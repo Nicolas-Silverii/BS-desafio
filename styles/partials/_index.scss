@@ -11,14 +11,12 @@
         "logo   logo    definitiva  nosotros"
         "logo   logo    definitiva  contacto";
         
-
+        
         
     
         
          }
 
-         
-      
          .menu__index h3 {
 
             font-size: 60px;
@@ -28,7 +26,9 @@
             border-radius: 50px;
         
         
-            }
+        }
+      
+
 
 
 .navbar_hijo {
@@ -37,6 +37,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  
+    }
+      
+
 
     .navbar__faciales {
         grid-area: faciales;
@@ -58,8 +63,10 @@
         grid-area: contacto;
     
     }
-    
 
+    .navbar_hijo img {
+        max-width: 50%;
+        text-align: center;
     
     }
     
@@ -81,6 +88,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+       
         
         .img__logo {
             filter: blur(1px);
