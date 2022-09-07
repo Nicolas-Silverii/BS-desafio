@@ -141,6 +141,25 @@
   }
 }
 
+.container-fluid img {
+  height: 250px;
+}
+
+.accordion {
+  --bs-accordion-color: $blackcolor;
+  --bs-accordion-bg: $carruselcolor;
+  --bs-accordion-border-color: $blackcolor(--bs-border-color);
+  --bs-accordion-btn-color: $carruselcolor(--bs-body-color);
+  --bs-accordion-btn-focus-border-color: $blackcolor;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem $carruselcolor;
+  --bs-accordion-active-color: $carruselcolor;
+  --bs-accordion-active-bg: $carruselcolor;
+}
+
+.carousel-control-next-icon {
+  color: blackcolor;
+}
+
 /***** MEDIAS ******/
 @media screen and (max-width: 768px) {
   .menu__index {
@@ -192,4 +211,11 @@
   .navbar {
     height: 200px;
   }
+
+
+
+
+
+
+  
 }/*# sourceMappingURL=estilo.css.map */
