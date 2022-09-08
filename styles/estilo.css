@@ -157,7 +157,14 @@
 }
 
 .carousel-control-next-icon {
-  color: blackcolor;
+  color: rgb(0, 0, 0);
+}
+
+.card3 {
+  background-color: rgba(228, 195, 195, 0.445);
+  color: black;
+  border-color: rgb(0, 0, 0);
+  border: 0.5px rgb(163, 144, 160) solid;
 }
 
 /***** MEDIAS ******/
@@ -211,10 +218,6 @@
   .navbar {
     height: 200px;
   }
-
-
-
-
 
 
   

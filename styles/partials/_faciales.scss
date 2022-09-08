@@ -1,13 +1,15 @@
+
+
 .col-md-4 img {
 
     background-color: rgb(163, 144, 160);
 
 
 .card {
-    background-color: rgba(228, 195, 195, 0.445);
+    background-color: $carruselcolor;
     color: black;
-    border-color: rgb(0, 0, 0);
-    border: 0.5px rgb(163, 144, 160) solid;
+    border-color: $blackcolor;
+    border: 0.5px $cardColor solid;
 
     .card p {
         font-family: 'Josefin Sans', sans-serif;
@@ -15,9 +17,9 @@
     
 
     .card a {
-        background-color: rgba(228, 195, 195, 0.445);
-        color: black;
-        border-color: rgb(0, 0, 0);
+        background-color: $cardColor;
+        color: $blackcolor;
+        border-color: $blackcolor;
         font-family: 'Josefin Sans', sans-serif;
         height: 50px;
     
@@ -25,23 +27,24 @@
     }
 
     .btn-primary {
-        --bs-btn-color: #fff;
-        --bs-btn-bg: #b29bb6a6;
-        --bs-btn-border-color: #b29bb6a6;
-        --bs-btn-hover-color: #fff;
-        --bs-btn-hover-bg: #b29bb6a6;
-        --bs-btn-hover-border-color: #b29bb6a6;
+        --bs-btn-color: rgb(255, 255, 255);
+        --bs-btn-bg: $carruselcolor;
+        --bs-btn-border-color: $carruselcolor;
+        --bs-btn-hover-color: rgb(255, 255, 255);
+        --bs-btn-hover-bg: $carruselcolor;
+        --bs-btn-hover-border-color: $carruselcolor;
         --bs-btn-focus-shadow-rgb: 49, 132, 253;
-        --bs-btn-active-color: #fff;
-        --bs-btn-active-bg: #b29bb6a6;
-        --bs-btn-active-border-color: #b29bb6a6;
+        --bs-btn-active-color: rgb(255, 255, 255);
+        --bs-btn-active-bg: $carruselcolor;
+        --bs-btn-active-border-color: $carruselcolor;
         --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-        --bs-btn-disabled-color: #fff;
-        --bs-btn-disabled-bg: #b29bb6a6;
-        --bs-btn-disabled-border-color: #b29bb6a6;
+        --bs-btn-disabled-color: rgb(255, 255, 255);
+        --bs-btn-disabled-bg: $carruselcolor;
+        --bs-btn-disabled-border-color: $carruselcolor;
     }
 
     
     }
 }
 }
+

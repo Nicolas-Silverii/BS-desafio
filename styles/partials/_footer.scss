@@ -1,0 +1,48 @@
+
+.pie {
+    display: flex;
+    justify-content: center;
+    background-color: $maincolor;
+    color: white;
+    padding-block: 20px;
+    
+    .iconos {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .fab {
+            padding: 1rem;
+        }
+    }
+}
+
+
+$redes: (
+    facebook: blue,
+    instagram: rgb(112, 47, 58),
+    whatsapp: green,
+);
+
+@each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }    
+}
+
+.fa-facebook {
+    width: 100px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.fa-facebook {
+    @extend %iconitos;
+}
+
+.fa-whatsapp {
+    @extend .fa-facebook;
+}
