@@ -167,6 +167,40 @@
   border: 0.5px rgb(163, 144, 160) solid;
 }
 
+.pie {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(238, 218, 233);
+  color: white;
+  padding-block: 20px;
+}
+.pie .iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pie .iconos .fab {
+  padding: 1rem;
+}
+
+.fa-facebook {
+  background-color: blue;
+}
+
+.fa-instagram {
+  background-color: rgb(112, 47, 58);
+}
+
+.fa-whatsapp {
+  background-color: green;
+}
+
+.fa-facebook {
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+
 /***** MEDIAS ******/
 @media screen and (max-width: 768px) {
   .menu__index {
@@ -218,7 +252,4 @@
   .navbar {
     height: 200px;
   }
-
-
-  
 }/*# sourceMappingURL=estilo.css.map */
