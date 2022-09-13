@@ -34,6 +34,10 @@
   border-radius: 50px;
 }
 
+.navbar {
+  background-color: rgb(238, 218, 233);
+}
+
 .navbar_hijo {
   margin: 5px;
   background-color: rgb(248, 223, 223);
@@ -155,6 +159,9 @@
   --bs-accordion-active-color: $carruselcolor;
   --bs-accordion-active-bg: $carruselcolor;
 }
+.accordion .accordion-button {
+  background-color: rgba(228, 195, 195, 0.443);
+}
 
 .carousel-control-next-icon {
   color: rgb(0, 0, 0);
@@ -184,15 +191,15 @@
 }
 
 .fa-facebook {
-  background-color: blue;
+  background-color: rgb(79, 79, 243);
 }
 
 .fa-instagram {
-  background-color: rgb(112, 47, 58);
+  background-color: rgb(150, 84, 95);
 }
 
 .fa-whatsapp {
-  background-color: green;
+  background-color: rgb(23, 182, 23);
 }
 
 .fa-facebook {
@@ -209,7 +216,7 @@
   }
   .navbar {
     background-color: rgb(238, 218, 233);
-    height: 25vh;
+    height: auto;
   }
   .navbar__logo {
     height: 200px;
