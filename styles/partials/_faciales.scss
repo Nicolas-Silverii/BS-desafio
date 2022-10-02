@@ -5,13 +5,17 @@
     background-color: rgb(0, 0, 0);  
    
        
-}
+
 
 .card {
-    background-color: $carruselcolor;
+    background-color: $carrusel-color;
     color: $blackcolor;
     border-color: $blackcolor;
     border: 0.5px $cardColor solid;
+
+    .card-img {
+        height: 100px;
+    }
 
     .card-title {
         background-color: red;
@@ -34,7 +38,7 @@
     
     }
 
-    
+}
 
     
 
