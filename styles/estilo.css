@@ -14,7 +14,7 @@
 }
 * a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .menu__index {
@@ -193,14 +193,14 @@
   --bs-btn-disabled-border-color: $carrusel-color;
 }
 
-.col-md-4 .card1 {
+.card1 {
   background-color: rgb(250, 250, 250);
   color: rgb(0, 0, 0);
 }
-.col-md-4 .card1 .card-img {
+.card1 .card-img {
   height: 100px;
 }
-.col-md-4 .card1 .card-title {
+.card1 .card-title {
   height: 50px;
   font-family: "Josefin Sans", sans-serif;
   background-color: rgba(178, 155, 182, 0.651);
@@ -209,10 +209,10 @@
   align-items: center;
   justify-content: center;
 }
-.col-md-4 .card1 .card p {
+.card1 .card p {
   font-family: "Josefin Sans", sans-serif;
 }
-.col-md-4 .card1 .card a {
+.card1 .card a {
   background-color: rgba(178, 155, 182, 0.651);
   color: rgb(250, 250, 250);
   border-color: rgb(0, 0, 0);
