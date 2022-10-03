@@ -20,9 +20,9 @@
 
 
 $redes: (
-    facebook: rgb(79, 79, 243),
-    instagram: rgb(150, 84, 95),
-    whatsapp: rgb(23, 182, 23),
+    facebook: $carrusel-color,
+    instagram: $carrusel-color,
+    whatsapp: $carrusel-color,
 );
 
 @each $redsocial, $colordered in $redes {
